@@ -1,3 +1,5 @@
+//adopted from: http://www.digikey.com/~/media/Images/Marketing/Resources/Calculators/resistor-color-chart.jpg?la=en-CA
+
 {
 	'ColorBands': [
 		{'Value': 0, ColorName: 'Black', 'HexColor': '#000000'},
@@ -14,8 +16,13 @@
 
 	//values in percentages
 	'ToleranceBands': [
-		{'Value': '1%', ColorName: 'Black', HexColor: '#000000'},
-		{'Value': '2%', ColorName: 'Red', HexColor: '#ff0000'},
-		{'Value': '0.5%', ColorName: 'Green', HexColor: '#07b60a'}
+		{'Value': '+/- 1%', ColorName: 'Black', HexColor: '#000000'},
+		{'Value': '+/- 2%', ColorName: 'Red', HexColor: '#ff0000'},
+		{'Value': '+/- 0.5%', ColorName: 'Green', HexColor: '#07b60a'},
+		{'Value': '+/- 0.25%', ColorName: 'Blue', HexColor: '#078fb6'},
+		{'Value': '+/- 0.10%', ColorName: 'Violet', HexColor: '#890af6'},
+		{'Value': '+/- 0.05%', ColorName: 'Grey', HexColor: '#959396'},
+		{'Value': '+/- 5%', ColorName: 'Gold', HexColor: '#ffdb00'},
+		{'Value': '+/- 10%', ColorName: 'Silver', HexColor: '#dbdbdb'},
 	]
 };

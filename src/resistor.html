@@ -32,7 +32,7 @@
                 <tr ng-repeat="ToleranceBand in view.ResistorList.ToleranceBands">
                   <td style="background-color:{{ToleranceBand.HexColor}}">
                   <p> {{ToleranceBand.Value}} </p>
-                  <input type="radio" name="{{ToleranceBand}}" value="{{ToleranceBand.Value}}" />
+                  <input type="radio" name="ToleranceBand" value="{{ToleranceBand.Value}}" />
                   </td>
                 </tr>
               </tbody>
