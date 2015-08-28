@@ -11,16 +11,34 @@
     <div ng-controller="ResistorController as view">
       <h2>Color Bands</h2>
       <h3>Select a colour band</h3>
-      <table ng-repeat="Band in view.BandList">
-        <tbody>
-          <tr ng-repeat="ColorBand in view.ResistorList.ColorBands">
-            <td style="background-color:{{ColorBand.HexColor}}">
-              <p> {{ColorBand.Value}} </p>
-            </td>
-          </tr> 
-        </tbody>
-      </table>
-
+      <form>
+        <fieldset>
+          <h4>Color Band</h4>
+          <table ng-repeat="Band in view.BandList">
+            <tbody>
+              <tr ng-repeat="ColorBand in view.ResistorList.ColorBands">
+                <td style="background-color:{{ColorBand.HexColor}}">
+                  <p> {{ColorBand.Value}} </p>
+                  <input type="radio" name="{{Band}}" value="{{ColorBand.Value}}" />
+                </td>
+              </tr> 
+            </tbody>
+          </table>
+        </fieldset>
+        <fieldset>
+            <h4>Tolerance Band</h4>
+            <table>
+              <tbody>
+                <tr ng-repeat="ToleranceBand in view.ResistorList.ToleranceBands">
+                  <td style="background-color:{{ToleranceBand.HexColor}}">
+                  <p> {{ToleranceBand.Value}} </p>
+                  <input type="radio" name="{{ToleranceBand}}" value="{{ToleranceBand.Value}}" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+        </fieldset>
+     </form>
     </div>
   </body>
 </HTML>

@@ -15,7 +15,7 @@
 	//values in percentages
 	'ToleranceBands': [
 		{'Value': '1%', ColorName: 'Black', HexColor: '#000000'},
-		{'Value': '2%', ColorName: 'Red', HexColor: '#000000'},
-		{'Value': '0.5%', ColorName: 'Green', HexColor: '#000000'}
+		{'Value': '2%', ColorName: 'Red', HexColor: '#ff0000'},
+		{'Value': '0.5%', ColorName: 'Green', HexColor: '#07b60a'}
 	]
 };
