@@ -1,0 +1,21 @@
+{
+	'ColorBands': [
+		{'Value': 0, ColorName: 'Black', 'HexColor': '#000000'},
+		{'Value': 1, ColorName: 'Brown', 'HexColor': '#833636'},
+		{'Value': 2, ColorName: 'Red', 'HexColor': '#ff0000'},
+		{'Value': 3, ColorName: 'Orange', 'HexColor': '#ff9a00'},
+		{'Value': 4, ColorName: 'Yellow', 'HexColor': '#e3ff00'},
+		{'Value': 5, ColorName: 'Green', 'HexColor': '#07b60a'},
+		{'Value': 6, ColorName: 'Blue', 'HexColor': '#078fb6'},
+		{'Value': 7, ColorName: 'Violet', 'HexColor': '#890af6'},
+		{'Value': 8, ColorName: 'Grey', 'HexColor': '#959396'},
+		{'Value': 9, ColorName: 'White', 'HexColor': '#ffffff'},
+	],
+
+	//values in percentages
+	'ToleranceBands': [
+		{'Value': '1%', ColorName: 'Black', HexColor: '#000000'},
+		{'Value': '2%', ColorName: 'Red', HexColor: '#000000'},
+		{'Value': '0.5%', ColorName: 'Green', HexColor: '#000000'}
+	]
+};
