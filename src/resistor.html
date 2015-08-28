@@ -1,17 +1,21 @@
 <HTML>
   <head>
     <title>Online Resistor Calculator</title>
+    <link rel="stylesheet" type="text/css" href="main.css"></link>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <script src="main.js"></script>
   </head>
   <body ng-app="ResistorApp">
+    <h1>Online Resistor Calculator</h1>
     <div ng-controller="ResistorController as view">
-      <table>
+      <h2>Color Bands</h2>
+      <h3>Select a colour band</h3>
+      <table ng-repeat="Band in view.BandList">
         <tbody>
-          <tr ng-repeat="band in view.resistorList.ColorBands">
-            <td style="background-color:{{band.HexColor}}">
-              <p> {{band.Value}} </p>
+          <tr ng-repeat="ColorBand in view.ResistorList.ColorBands">
+            <td style="background-color:{{ColorBand.HexColor}}">
+              <p> {{ColorBand.Value}} </p>
             </td>
           </tr> 
         </tbody>
