@@ -1,0 +1,21 @@
+{
+  "name": "resistor-calculator",
+  "version": "1.0.0",
+  "description": "an online resistor calculator used to convert colors into values and vice versa",
+  "main": "resistor.controller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify *.js -o main.js"
+  },
+  "keywords": [
+    "resistor",
+    "calculator",
+    "ece"
+  ],
+  "author": "jasonwong94",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.4.4",
+    "browserify": "^11.0.1"
+  }
+}
