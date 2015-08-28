@@ -1,0 +1,22 @@
+<HTML>
+  <head>
+    <title>Online Resistor Calculator</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body ng-app="ResistorApp">
+    <div ng-controller="ResistorController as view">
+      <table>
+        <tbody>
+          <tr ng-repeat="band in view.resistorList.ColorBands">
+            <td style="background-color:{{band.HexColor}}">
+              <p> {{band.Value}} </p>
+            </td>
+          </tr> 
+        </tbody>
+      </table>
+
+    </div>
+  </body>
+</HTML>
